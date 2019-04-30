@@ -148,7 +148,7 @@ if itest.s "x" != "x$show_env" ; then
 	printenv
 fi
 
-setenv bootargs "$bootargs console=${console},115200 vmalloc=${vmalloc}"
+setenv bootargs "$bootargs console=tty1 console=${console},115200 vmalloc=${vmalloc}"
 setenv bootargs "$bootargs cma=${cma} consoleblank=0 root=${root} rootwait"
 
 if itest.s "x" != "x${loglevel}" ; then
